@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Popup</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+    <div id="overlay"></div>
+    <a class="btn" onclick="popupToggle(true)">Pop-Up</a>
+    <div id="popup">
+        <a class="close" onclick="popupToggle()">
+            <img src="../Enries/close.png" alt="close">
+        </a>
+        <div class="content">
+            <img src="../Enries/Elementor-Logo.png" alt="Elementor-Logo">
+            <h2>Your Pop-Up Content</h2>
+            <div class="loader done" id="loader"></div>
+            <p id="content"></p>
+        </div>
+    </div>
+</body>
+</html>
